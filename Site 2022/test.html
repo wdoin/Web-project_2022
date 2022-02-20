@@ -1,0 +1,35 @@
+<html>
+<head><title>Тест</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="data/css/bootstrap.min.css">
+<link rel="stylesheet" href="data/testcss.css">
+<script src="data/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="data/data.js"></script>
+<style>
+
+</style>
+</head>
+<h1><script>document.write(title)</script></h1>
+<h2><script>document.write(subtitle)</script></h2>
+
+<form name="quiz">
+<ol>
+<script>
+	for(var q=0; q<questions.length; ++q) {
+		var question = questions[q];
+		var idx = 1 + q;
+	 
+		document.writeln('<li><span class="quest">' + question.text + '</span><br/>');
+		for(var i in question.answers) {
+		 document.writeln('<input type=radio name="q' + idx + '" value="' + i +
+		 '" onClick="Engine(' + q + ', this.value)">' + question.answers[i] + '<br/>');
+}
+}
+</script>
+</ol>
+<input type="button" onClick="Score()" value="Проверить результаты" />
+
+</form>
+</script>
+</body>
+</html>

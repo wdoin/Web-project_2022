@@ -1,0 +1,44 @@
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(204, 231, 240);
+}
+p, span, input, td {
+    font-size:20px;
+    
+}
+li{
+    box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button{
+    font-size:15px;
+}
+#ot {
+    color:blue;
+}
+.quest{
+    border-bottom: 2px solid black;
+    width: auto;
+}
+input:hover{
+    border-bottom: 2px solid black;
+}
+#text:hover{
+    border-bottom: 1px solid black;
+}
+.answers:hover{
+    text-decoration: underline;
+}
+span.quest {font-weight: bold;}
